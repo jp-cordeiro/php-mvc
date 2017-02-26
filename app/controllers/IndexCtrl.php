@@ -9,6 +9,9 @@ class IndexCtrl
     /***Actions***/
 
     public function index(){
+
+        $animais = array('Pássaro','Gato','Cachorro','Coelho');
+        
         include_once '../app/views/index/index.phtml';
     }
 
