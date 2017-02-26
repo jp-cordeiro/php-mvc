@@ -9,10 +9,10 @@ class IndexCtrl
     /***Actions***/
 
     public function index(){
-        echo "Route: Index";
+        include_once '../app/views/index/index.phtml';
     }
 
     public function contact(){
-        echo "Route: Contact";
+        include_once '../app/views/index/contact.phtml';
     }
 }
