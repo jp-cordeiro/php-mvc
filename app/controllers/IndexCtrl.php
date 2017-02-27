@@ -2,20 +2,22 @@
 
 namespace app\controllers;
 
+use mvc\ctrl\Action;
 
-class IndexCtrl
+class IndexCtrl extends Action
 {
-
+    
     /***Actions***/
 
     public function index(){
 
-        $animais = array('Pássaro','Gato','Cachorro','Coelho');
+        $this->view->animais = array('Pássaro','Gato','Cachorro','Coelho');
         
-        include_once '../app/views/index/index.phtml';
+        $this->render("index");
     }
 
     public function contact(){
-        include_once '../app/views/index/contact.phtml';
+        $this->render("contact");
     }
+    
 }
